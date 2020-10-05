@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sftp:
+    image: atmoz/sftp
+    volumes:
+        - ./upload:/home/simuladorsftp/upload
+    ports:
+        - "22:22"
+    command: simuladorsftp:pass
